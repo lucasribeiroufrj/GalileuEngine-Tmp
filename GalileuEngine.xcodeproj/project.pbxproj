@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8904EC922CE39EA400DEAE4E /* ParticleContactResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8904EC902CE39EA400DEAE4E /* ParticleContactResolver.cpp */; };
+		8904EC952CE3D57300DEAE4E /* ParticleContactGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8904EC932CE3D57300DEAE4E /* ParticleContactGenerator.cpp */; };
+		8904EC982CE3DCD000DEAE4E /* ParticleLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8904EC962CE3DCD000DEAE4E /* ParticleLink.cpp */; };
+		8904EC9B2CE3E0E300DEAE4E /* ParticleCable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8904EC992CE3E0E300DEAE4E /* ParticleCable.cpp */; };
+		8904EC9E2CE3EE0900DEAE4E /* ParticleRod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8904EC9C2CE3EE0900DEAE4E /* ParticleRod.cpp */; };
+		8904ECA32CE40D7A00DEAE4E /* ParticleWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8904ECA12CE40D7A00DEAE4E /* ParticleWorld.cpp */; };
+		89124D9E2C851C45008EE985 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89124D9C2C851C45008EE985 /* Application.cpp */; };
+		89124DA32C85226C008EE985 /* Precision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89124DA12C85226C008EE985 /* Precision.cpp */; };
+		89124DA62C852435008EE985 /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89124DA42C852435008EE985 /* Vector3.cpp */; };
+		89124DA92C86212B008EE985 /* Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89124DA72C86212B008EE985 /* Math.cpp */; };
+		89124DAD2C88B949008EE985 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89124DAB2C88B949008EE985 /* Particle.cpp */; };
+		894C6D622CE7A9CA00DD55F5 /* libshaderc_combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 894C6D612CE7A9C300DD55F5 /* libshaderc_combined.a */; };
+		894C6D642CE8D5CE00DD55F5 /* DefaultVertexShader.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89576A9A2CC033600023BCDF /* DefaultVertexShader.vert */; };
+		894C6D652CE8D5D100DD55F5 /* DefaultFragmentShader.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89576A9B2CC035050023BCDF /* DefaultFragmentShader.frag */; };
+		89576A8A2CA81D180023BCDF /* ParticleForceGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89576A882CA81D180023BCDF /* ParticleForceGenerator.cpp */; };
+		89576A8D2CA836AE0023BCDF /* ParticleForcePairManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89576A8B2CA836AE0023BCDF /* ParticleForcePairManager.cpp */; };
+		89576A902CACAD940023BCDF /* ParticleGravityGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89576A8E2CACAD940023BCDF /* ParticleGravityGenerator.cpp */; };
+		89576A932CB326E20023BCDF /* ParticleSpringGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89576A912CB326E20023BCDF /* ParticleSpringGenerator.cpp */; };
+		89576A962CB5E55D0023BCDF /* ParticleBuoyancyGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89576A942CB5E55D0023BCDF /* ParticleBuoyancyGenerator.cpp */; };
+		89E0FA262CFCBC2C00B8A28B /* statue-512x512.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 89E0FA252CFCBB4400B8A28B /* statue-512x512.jpg */; };
+		89F523DD2C825AEA00DC5039 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89F523DC2C825AEA00DC5039 /* main.cpp */; };
+		89F523E52C825EA300DC5039 /* libglfw.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F523E42C825EA300DC5039 /* libglfw.3.4.dylib */; };
+		89F523ED2C82620A00DC5039 /* libvulkan.1.3.290.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F523E62C825F5A00DC5039 /* libvulkan.1.3.290.dylib */; };
+		89FF63E92CDFE09C00FEFA81 /* ParticleContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FF63E72CDFE09C00FEFA81 /* ParticleContact.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		894C6D632CE8D5B700DD55F5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = shaders/src;
+			dstSubfolderSpec = 6;
+			files = (
+				894C6D642CE8D5CE00DD55F5 /* DefaultVertexShader.vert in CopyFiles */,
+				894C6D652CE8D5D100DD55F5 /* DefaultFragmentShader.frag in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E0FA222CFCA88400B8A28B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = textures;
+			dstSubfolderSpec = 6;
+			files = (
+				89E0FA262CFCBC2C00B8A28B /* statue-512x512.jpg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8904EC902CE39EA400DEAE4E /* ParticleContactResolver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleContactResolver.cpp; sourceTree = "<group>"; };
+		8904EC912CE39EA400DEAE4E /* ParticleContactResolver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleContactResolver.hpp; sourceTree = "<group>"; };
+		8904EC932CE3D57300DEAE4E /* ParticleContactGenerator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleContactGenerator.cpp; sourceTree = "<group>"; };
+		8904EC942CE3D57300DEAE4E /* ParticleContactGenerator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleContactGenerator.hpp; sourceTree = "<group>"; };
+		8904EC962CE3DCD000DEAE4E /* ParticleLink.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleLink.cpp; sourceTree = "<group>"; };
+		8904EC972CE3DCD000DEAE4E /* ParticleLink.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleLink.hpp; sourceTree = "<group>"; };
+		8904EC992CE3E0E300DEAE4E /* ParticleCable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleCable.cpp; sourceTree = "<group>"; };
+		8904EC9A2CE3E0E300DEAE4E /* ParticleCable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleCable.hpp; sourceTree = "<group>"; };
+		8904EC9C2CE3EE0900DEAE4E /* ParticleRod.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleRod.cpp; sourceTree = "<group>"; };
+		8904EC9D2CE3EE0900DEAE4E /* ParticleRod.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleRod.hpp; sourceTree = "<group>"; };
+		8904ECA12CE40D7A00DEAE4E /* ParticleWorld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleWorld.cpp; sourceTree = "<group>"; };
+		8904ECA22CE40D7A00DEAE4E /* ParticleWorld.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleWorld.hpp; sourceTree = "<group>"; };
+		89124D9B2C82718B008EE985 /* GalileuEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GalileuEngine.entitlements; sourceTree = "<group>"; };
+		89124D9C2C851C45008EE985 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		89124D9D2C851C45008EE985 /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		89124DA12C85226C008EE985 /* Precision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Precision.cpp; sourceTree = "<group>"; };
+		89124DA22C85226C008EE985 /* Precision.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Precision.hpp; sourceTree = "<group>"; };
+		89124DA42C852435008EE985 /* Vector3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
+		89124DA52C852435008EE985 /* Vector3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector3.hpp; sourceTree = "<group>"; };
+		89124DA72C86212B008EE985 /* Math.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Math.cpp; sourceTree = "<group>"; };
+		89124DA82C86212B008EE985 /* Math.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Math.hpp; sourceTree = "<group>"; };
+		89124DAB2C88B949008EE985 /* Particle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		89124DAC2C88B949008EE985 /* Particle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
+		89124DB02C9A095A008EE985 /* UtilMacros.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UtilMacros.hpp; sourceTree = "<group>"; };
+		894C6D612CE7A9C300DD55F5 /* libshaderc_combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libshaderc_combined.a; path = ../../VulkanSDK/1.3.290.0/macOS/lib/libshaderc_combined.a; sourceTree = "<group>"; };
+		89576A882CA81D180023BCDF /* ParticleForceGenerator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleForceGenerator.cpp; sourceTree = "<group>"; };
+		89576A892CA81D180023BCDF /* ParticleForceGenerator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleForceGenerator.hpp; sourceTree = "<group>"; };
+		89576A8B2CA836AE0023BCDF /* ParticleForcePairManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleForcePairManager.cpp; sourceTree = "<group>"; };
+		89576A8C2CA836AE0023BCDF /* ParticleForcePairManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleForcePairManager.hpp; sourceTree = "<group>"; };
+		89576A8E2CACAD940023BCDF /* ParticleGravityGenerator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleGravityGenerator.cpp; sourceTree = "<group>"; };
+		89576A8F2CACAD940023BCDF /* ParticleGravityGenerator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleGravityGenerator.hpp; sourceTree = "<group>"; };
+		89576A912CB326E20023BCDF /* ParticleSpringGenerator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleSpringGenerator.cpp; sourceTree = "<group>"; };
+		89576A922CB326E20023BCDF /* ParticleSpringGenerator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleSpringGenerator.hpp; sourceTree = "<group>"; };
+		89576A942CB5E55D0023BCDF /* ParticleBuoyancyGenerator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleBuoyancyGenerator.cpp; sourceTree = "<group>"; };
+		89576A952CB5E55D0023BCDF /* ParticleBuoyancyGenerator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleBuoyancyGenerator.hpp; sourceTree = "<group>"; };
+		89576A9A2CC033600023BCDF /* DefaultVertexShader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DefaultVertexShader.vert; sourceTree = "<group>"; };
+		89576A9B2CC035050023BCDF /* DefaultFragmentShader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DefaultFragmentShader.frag; sourceTree = "<group>"; };
+		89E0FA1F2CFBC48300B8A28B /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		89E0FA252CFCBB4400B8A28B /* statue-512x512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "statue-512x512.jpg"; sourceTree = "<group>"; };
+		89F523D92C825AEA00DC5039 /* GalileuEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GalileuEngine; sourceTree = BUILT_PRODUCTS_DIR; };
+		89F523DC2C825AEA00DC5039 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		89F523E42C825EA300DC5039 /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = ../../../../opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.4.dylib; sourceTree = "<group>"; };
+		89F523E62C825F5A00DC5039 /* libvulkan.1.3.290.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.3.290.dylib; path = ../../VulkanSDK/1.3.290.0/macOS/lib/libvulkan.1.3.290.dylib; sourceTree = "<group>"; };
+		89FF63E72CDFE09C00FEFA81 /* ParticleContact.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleContact.cpp; sourceTree = "<group>"; };
+		89FF63E82CDFE09C00FEFA81 /* ParticleContact.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleContact.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89F523D62C825AEA00DC5039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				894C6D622CE7A9CA00DD55F5 /* libshaderc_combined.a in Frameworks */,
+				89F523E52C825EA300DC5039 /* libglfw.3.4.dylib in Frameworks */,
+				89F523ED2C82620A00DC5039 /* libvulkan.1.3.290.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8904EC9F2CE405DF00DEAE4E /* ContactGenerators */ = {
+			isa = PBXGroup;
+			children = (
+				8904EC932CE3D57300DEAE4E /* ParticleContactGenerator.cpp */,
+				8904EC942CE3D57300DEAE4E /* ParticleContactGenerator.hpp */,
+				8904EC962CE3DCD000DEAE4E /* ParticleLink.cpp */,
+				8904EC972CE3DCD000DEAE4E /* ParticleLink.hpp */,
+				8904EC992CE3E0E300DEAE4E /* ParticleCable.cpp */,
+				8904EC9A2CE3E0E300DEAE4E /* ParticleCable.hpp */,
+				8904EC9C2CE3EE0900DEAE4E /* ParticleRod.cpp */,
+				8904EC9D2CE3EE0900DEAE4E /* ParticleRod.hpp */,
+			);
+			path = ContactGenerators;
+			sourceTree = "<group>";
+		};
+		8904ECA02CE4067300DEAE4E /* ForceGenerators */ = {
+			isa = PBXGroup;
+			children = (
+				89576A882CA81D180023BCDF /* ParticleForceGenerator.cpp */,
+				89576A892CA81D180023BCDF /* ParticleForceGenerator.hpp */,
+				89576A8E2CACAD940023BCDF /* ParticleGravityGenerator.cpp */,
+				89576A8F2CACAD940023BCDF /* ParticleGravityGenerator.hpp */,
+				89576A912CB326E20023BCDF /* ParticleSpringGenerator.cpp */,
+				89576A922CB326E20023BCDF /* ParticleSpringGenerator.hpp */,
+				89576A942CB5E55D0023BCDF /* ParticleBuoyancyGenerator.cpp */,
+				89576A952CB5E55D0023BCDF /* ParticleBuoyancyGenerator.hpp */,
+			);
+			path = ForceGenerators;
+			sourceTree = "<group>";
+		};
+		89124D9F2C8521C2008EE985 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				89E0FA202CFC9F6A00B8A28B /* Textures */,
+				89E0FA1D2CFBC42E00B8A28B /* External */,
+				89576A982CC032F40023BCDF /* Shaders */,
+				89124D9D2C851C45008EE985 /* Application.hpp */,
+				89124D9C2C851C45008EE985 /* Application.cpp */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		89124DA02C85221A008EE985 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				89124DA12C85226C008EE985 /* Precision.cpp */,
+				89124DA22C85226C008EE985 /* Precision.hpp */,
+				89124DA42C852435008EE985 /* Vector3.cpp */,
+				89124DA52C852435008EE985 /* Vector3.hpp */,
+				89124DA72C86212B008EE985 /* Math.cpp */,
+				89124DA82C86212B008EE985 /* Math.hpp */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		89124DAA2C88B932008EE985 /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				89124DAB2C88B949008EE985 /* Particle.cpp */,
+				89124DAC2C88B949008EE985 /* Particle.hpp */,
+				8904ECA02CE4067300DEAE4E /* ForceGenerators */,
+				89576A8B2CA836AE0023BCDF /* ParticleForcePairManager.cpp */,
+				89576A8C2CA836AE0023BCDF /* ParticleForcePairManager.hpp */,
+				89FF63E72CDFE09C00FEFA81 /* ParticleContact.cpp */,
+				89FF63E82CDFE09C00FEFA81 /* ParticleContact.hpp */,
+				8904EC902CE39EA400DEAE4E /* ParticleContactResolver.cpp */,
+				8904EC912CE39EA400DEAE4E /* ParticleContactResolver.hpp */,
+				8904EC9F2CE405DF00DEAE4E /* ContactGenerators */,
+				8904ECA12CE40D7A00DEAE4E /* ParticleWorld.cpp */,
+				8904ECA22CE40D7A00DEAE4E /* ParticleWorld.hpp */,
+			);
+			path = Physics;
+			sourceTree = "<group>";
+		};
+		89124DAE2C9A08CF008EE985 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				89124DB02C9A095A008EE985 /* UtilMacros.hpp */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		89576A982CC032F40023BCDF /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				89576A9A2CC033600023BCDF /* DefaultVertexShader.vert */,
+				89576A9B2CC035050023BCDF /* DefaultFragmentShader.frag */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		89E0FA1D2CFBC42E00B8A28B /* External */ = {
+			isa = PBXGroup;
+			children = (
+				89E0FA1E2CFBC45300B8A28B /* stb */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		89E0FA1E2CFBC45300B8A28B /* stb */ = {
+			isa = PBXGroup;
+			children = (
+				89E0FA1F2CFBC48300B8A28B /* stb_image.h */,
+			);
+			path = stb;
+			sourceTree = "<group>";
+		};
+		89E0FA202CFC9F6A00B8A28B /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				89E0FA252CFCBB4400B8A28B /* statue-512x512.jpg */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		89F523D02C825AEA00DC5039 = {
+			isa = PBXGroup;
+			children = (
+				89F523DB2C825AEA00DC5039 /* GalileuEngine */,
+				89F523DA2C825AEA00DC5039 /* Products */,
+				89F523E32C825EA300DC5039 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		89F523DA2C825AEA00DC5039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89F523D92C825AEA00DC5039 /* GalileuEngine */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89F523DB2C825AEA00DC5039 /* GalileuEngine */ = {
+			isa = PBXGroup;
+			children = (
+				89124DAE2C9A08CF008EE985 /* Core */,
+				89124DAA2C88B932008EE985 /* Physics */,
+				89124DA02C85221A008EE985 /* Math */,
+				89124D9F2C8521C2008EE985 /* Graphics */,
+				89124D9B2C82718B008EE985 /* GalileuEngine.entitlements */,
+				89F523DC2C825AEA00DC5039 /* main.cpp */,
+			);
+			path = GalileuEngine;
+			sourceTree = "<group>";
+		};
+		89F523E32C825EA300DC5039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				894C6D612CE7A9C300DD55F5 /* libshaderc_combined.a */,
+				89F523E62C825F5A00DC5039 /* libvulkan.1.3.290.dylib */,
+				89F523E42C825EA300DC5039 /* libglfw.3.4.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89F523D82C825AEA00DC5039 /* GalileuEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89F523E02C825AEA00DC5039 /* Build configuration list for PBXNativeTarget "GalileuEngine" */;
+			buildPhases = (
+				89F523D52C825AEA00DC5039 /* Sources */,
+				89F523D62C825AEA00DC5039 /* Frameworks */,
+				894C6D632CE8D5B700DD55F5 /* CopyFiles */,
+				89E0FA222CFCA88400B8A28B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GalileuEngine;
+			productName = GalileuEngine;
+			productReference = 89F523D92C825AEA00DC5039 /* GalileuEngine */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89F523D12C825AEA00DC5039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					89F523D82C825AEA00DC5039 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 89F523D42C825AEA00DC5039 /* Build configuration list for PBXProject "GalileuEngine" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89F523D02C825AEA00DC5039;
+			productRefGroup = 89F523DA2C825AEA00DC5039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89F523D82C825AEA00DC5039 /* GalileuEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89F523D52C825AEA00DC5039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8904EC9B2CE3E0E300DEAE4E /* ParticleCable.cpp in Sources */,
+				8904EC9E2CE3EE0900DEAE4E /* ParticleRod.cpp in Sources */,
+				89124DA32C85226C008EE985 /* Precision.cpp in Sources */,
+				89124DAD2C88B949008EE985 /* Particle.cpp in Sources */,
+				89124D9E2C851C45008EE985 /* Application.cpp in Sources */,
+				8904EC982CE3DCD000DEAE4E /* ParticleLink.cpp in Sources */,
+				89576A962CB5E55D0023BCDF /* ParticleBuoyancyGenerator.cpp in Sources */,
+				89124DA62C852435008EE985 /* Vector3.cpp in Sources */,
+				8904ECA32CE40D7A00DEAE4E /* ParticleWorld.cpp in Sources */,
+				89F523DD2C825AEA00DC5039 /* main.cpp in Sources */,
+				8904EC922CE39EA400DEAE4E /* ParticleContactResolver.cpp in Sources */,
+				89576A8A2CA81D180023BCDF /* ParticleForceGenerator.cpp in Sources */,
+				8904EC952CE3D57300DEAE4E /* ParticleContactGenerator.cpp in Sources */,
+				89576A902CACAD940023BCDF /* ParticleGravityGenerator.cpp in Sources */,
+				89FF63E92CDFE09C00FEFA81 /* ParticleContact.cpp in Sources */,
+				89124DA92C86212B008EE985 /* Math.cpp in Sources */,
+				89576A932CB326E20023BCDF /* ParticleSpringGenerator.cpp in Sources */,
+				89576A8D2CA836AE0023BCDF /* ParticleForcePairManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		89F523DE2C825AEA00DC5039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MAC_OS=1",
+					"DEBUG=1",
+					"GE_BUILD_DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/lucasribeiroufrj/VulkanSDK/1.3.290.0/macOS/include,
+					/opt/homebrew/opt/glfw/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = /Users/lucasribeiroufrj/VulkanSDK/1.3.290.0/macOS/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/Users/lucasribeiroufrj/VulkanSDK/1.3.290.0/macOS/lib,
+					/opt/homebrew/opt/glfw/lib,
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		89F523DF2C825AEA00DC5039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "MAC_OS=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/lucasribeiroufrj/VulkanSDK/1.3.290.0/macOS/include,
+					/opt/homebrew/opt/glfw/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = /Users/lucasribeiroufrj/VulkanSDK/1.3.290.0/macOS/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/Users/lucasribeiroufrj/VulkanSDK/1.3.290.0/macOS/lib,
+					/opt/homebrew/opt/glfw/lib,
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "";
+			};
+			name = Release;
+		};
+		89F523E12C825AEA00DC5039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GalileuEngine/GalileuEngine.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQ3E7XG6B7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/glfw/3.4/lib,
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		89F523E22C825AEA00DC5039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GalileuEngine/GalileuEngine.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQ3E7XG6B7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/glfw/3.4/lib,
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89F523D42C825AEA00DC5039 /* Build configuration list for PBXProject "GalileuEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F523DE2C825AEA00DC5039 /* Debug */,
+				89F523DF2C825AEA00DC5039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89F523E02C825AEA00DC5039 /* Build configuration list for PBXNativeTarget "GalileuEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F523E12C825AEA00DC5039 /* Debug */,
+				89F523E22C825AEA00DC5039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89F523D12C825AEA00DC5039 /* Project object */;
+}
